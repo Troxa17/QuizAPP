@@ -10,25 +10,78 @@
         android:id="@+id/questionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
         android:text="Question"
         android:textAlignment="center"
-        android:textSize="18sp"
         android:textColor="@color/white"
+        android:textSize="18sp"
         android:textStyle="bold"
-        android:fontFamily="monospace"
         app:layout_constraintBottom_toTopOf="@+id/submitAnswerButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436"
+        app:layout_constraintVertical_bias="0.182"
         tools:ignore="MissingConstraints" />
 
     <RadioGroup
         android:id="@+id/optionsRadioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="344dp"
+        android:layout_height="458dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/submitAnswerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionTextView"
+        app:layout_constraintVertical_bias="0.434"
         tools:ignore="MissingConstraints">
+
+        <RadioButton
+
+            android:id="@+id/option4RadioButton"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/option3RadioButton"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|left"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/option2RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginTop="100dp"
+            android:fontFamily="monospace"
+            android:gravity="top|left"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/option1RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="monospace"
+            android:gravity="bottom|right"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
     </RadioGroup>
 
@@ -36,67 +89,18 @@
         android:id="@+id/submitAnswerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:fontFamily="monospace"
         android:text="Submit Answer"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:fontFamily="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.816"
+        app:layout_constraintVertical_bias="0.814"
         tools:ignore="MissingConstraints" />
 
-    <RadioButton
-        android:id="@+id/option1RadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:fontFamily="monospace"
-        app:layout_constraintBottom_toTopOf="@+id/option3RadioButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.243"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/questionTextView"
-        app:layout_constraintVertical_bias="0.506" />
-
-    <RadioButton
-        android:id="@+id/option2RadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:fontFamily="monospace"
-        app:layout_constraintBottom_toTopOf="@+id/submitAnswerButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/option1RadioButton"
-        app:layout_constraintTop_toBottomOf="@+id/questionTextView"
-        app:layout_constraintVertical_bias="0.154" />
-
-    <RadioButton
-        android:id="@+id/option3RadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:fontFamily="monospace"
-        app:layout_constraintBottom_toTopOf="@+id/submitAnswerButton"
-        app:layout_constraintEnd_toStartOf="@+id/option4RadioButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/questionTextView"
-        app:layout_constraintVertical_bias="0.494" />
-
-    <RadioButton
-        android:id="@+id/option4RadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:fontFamily="monospace"
-        app:layout_constraintBottom_toTopOf="@+id/submitAnswerButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/option3RadioButton"
-        app:layout_constraintTop_toBottomOf="@+id/option2RadioButton"
-        app:layout_constraintVertical_bias="0.228" />
 </androidx.constraintlayout.widget.ConstraintLayout>
